@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> Movie Search</h1>
+        </header>
+
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search movies by title...">
+                <button onclick="searchMovie()">Search</button>
+            </div>
+            
+            <div class="search-options">
+                <div class="option">
+                    <input type="text" id="keywordInput" placeholder="Search by keyword...">
+                    <button onclick="searchByKeyword()">Browse</button>
+                </div>
+                <div class="option">
+                    <input type="text" id="imdbInput" placeholder="Enter IMDb ID (tt1375666)">
+                    <button onclick="searchByImdb()">Find</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="top-movies-section">
+            <h2> Top Rated Movies</h2>
+            <div id="topMovies" class="movies-grid"></div>
+        </section>
+
+        <div class="content">
+            <div id="loading" class="hidden">Loading...</div>
+            <div id="error" class="hidden"></div>
+            <div id="results"></div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
