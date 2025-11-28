@@ -1,4 +1,4 @@
-const API_KEY = 'ee54881f';
+const API_KEY = '1f3fdfa4';
 const BASE_URL = 'https://www.omdbapi.com/';
 
 const TOP_RATED_MOVIES = [
